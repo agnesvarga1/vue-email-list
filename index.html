@@ -25,7 +25,10 @@
         Get Email
       </button>
       <h3>Gli indirizzi sono i seguenti:</h3>
-      <p v-for="(email,index) in emails" :key="index">{{email}}</p>
+
+      <p v-for="(email,index) in emails" :key="index">
+        {{emails.length === 10 ? email : ""}}
+      </p>
     </div>
 
     <!-- SCRIPTS -->
